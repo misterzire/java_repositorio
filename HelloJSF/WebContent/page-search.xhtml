@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head><title>Listados</title>
+<link href="./css/styles.css" 
+      rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<h:form>
+<h2>Pesquisar</h2>
+
+<h:inputText id="nome" size="50" value="#{pessoaBean.nome}"
+						 label="Nome" 
+						 disabled="false"
+						 required="false"
+						 requiredMessage="Campo nome é obrigatorio"/>					
+
+<h:commandButton value="Pesquisar" actionListener="#{pessoaBean.searchPessoas}"
+							 styleClass="botao"/>				 
+				
+
+<h:dataTable var="scores" 
+             value="#{pessoaBean.searchPessoas}"
+             border="1"
+             styleClass="tabela" 
+             headerClass="cabecalhoTabela" 
+             rowClasses="linha1Tabela, linha2Tabela">
+  <h:column><f:facet name="header">Codigo</f:facet>#{scores.codigo}</h:column>
+  <h:column><f:facet name="header">Nome</f:facet>#{scores.nome}</h:column>
+  <h:column><f:facet name="header">Telefone</f:facet>#{scores.telefone}</h:column>
+  <h:column><f:facet name="header">Editar</f:facet>
+    <h:commandLink action="page-edit"> 
+          <f:setPropertyActionListener target="#{pessoaBean}" value="#{scores}" />
+          <h:graphicImage value="./images/editar.png" title="Editar" styleClass="imagemLink"/>
+ 	</h:commandLink>
+  </h:column>  
+</h:dataTable>
+<br/>
+  <h:commandButton value="Refresh" action="page-search?faces-redirect=true" styleClass="botao"/>
+  <h:commandButton value="Listar todos" action="page-list?faces-redirect=true" styleClass="botao"/>
+  <h:commandButton value="Voltar" 
+                   action="page-insert?faces-redirect=true" styleClass="botao"/>     <!-- Navigates to page-a.jsf -->
+</h:form>
+</h:body></html>

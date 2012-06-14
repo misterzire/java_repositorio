@@ -1,0 +1,54 @@
+a {
+font: 12px Arial, sans-serif;
+font-weight: bold;
+color: #003399;
+}
+h1 {
+font: 18px Arial, sans-serif;
+font-weight: bold;
+color: #009900;
+text-decoration: underline;
+}
+.linkComEspaco {
+padding-right: 10px;
+}
+.imagemLink {
+border: none
+}
+.error {
+font: 11px Arial, sans-serif;
+color: red;
+}
+.msgInfo {
+font: 11px Arial, sans-serif;
+color: blue;
+}
+.botao {
+background-color: #999999;
+color: #FFFFFF;
+border: 1px outset;
+}
+label {
+font: 11px Arial, sans-serif;
+font-weight: bold;
+color: #333333;
+}
+.tabela {
+border: 1px solid #666666;
+}
+.cabecalhoTabela {
+text-align: center;
+font: 11px Arial, sans-serif;
+font-weight: bold;
+color: white;
+background: #666666;
+}
+.linha1Tabela {
+font: 11px Arial, sans-serif;
+background: #DBDBDB;
+}
+.linha2Tabela {
+font: 11px Arial, sans-serif;
+background: #E6E6E6;
+}
+

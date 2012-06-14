@@ -1,0 +1,97 @@
+.error { font-weight: bold;
+  color: red;
+}
+
+.heading {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    background-color: yellow;
+    text-align: center;
+}
+.row1 {
+    font-family: Times New Roman, serif;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+.row2 {
+    font-family: Times New Roman, serif;
+    font-size: 18px;
+    color: black;
+    background-color: gray;
+}
+.row3 {
+    font-family: Times New Roman, serif;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+
+body { background-color: #fdf5e6; }
+a:hover { color: red; }
+th.title   { background-color: #ef8429;
+             font-size: 28px;
+             font-family: Arial, Helvetica, sans-serif;
+}
+tr { font-size: 18px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+th { background-color: #ef8429; }
+caption { color: #440000;
+          font-weight: bold;
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+}
+legend { font-weight: bold;
+         color: black;
+         background-color: #eeeeee;
+         border: 1px solid #999999;
+         padding: 3px 2px;
+}
+h2 { color: #440000;
+	 font-weight: bold;
+	 font-size: 18px;
+	 font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalhoTabela {
+text-align: center;
+font: 11px Arial, sans-serif;
+font-weight: bold;
+color: white;
+background: #666666;
+}
+.linha1Tabela {
+font: 11px Arial, sans-serif;
+background: #DBDBDB;
+}
+.linha2Tabela {
+font: 11px Arial, sans-serif;
+background: #E6E6E6;
+}
+.colunaTipo {
+width: 20px;
+text-align: center;
+}
+.colunaPessoa {
+width: 200px;
+}
+.colunaDescricao {
+}
+.colunaValor {
+width: 100px;
+text-align: center;
+}
+.colunaVencimento {
+width: 100px;
+text-align: center;
+}
+.colunaAberta {
+width: 80px;
+text-align: center;
+}
+.colunaAcoes {
+width: 40px;
+text-align: center;
+}

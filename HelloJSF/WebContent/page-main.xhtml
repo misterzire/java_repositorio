@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head><title>Main</title>
+<link href="./css/styles.css" 
+      rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<h:form>
+<h2>Main</h2>
+
+<h:panelGrid columns="1">
+
+  <h:panelGroup>
+   <h:commandLink value="Incluir" action="page-insert?faces-redirect=true" /> 
+  </h:panelGroup>
+  
+  <h:panelGroup>  
+  <h:commandLink value="Listar" action="page-list?faces-redirect=true" />
+  </h:panelGroup>
+  
+  <h:panelGroup>  
+  <h:commandLink value="Pesquisar" action="page-search?faces-redirect=true" />
+  </h:panelGroup>
+  
+</h:panelGrid>  
+    
+  
+</h:form>
+</h:body></html>

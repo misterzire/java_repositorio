@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head><title>Agenda</title>
+ <link href="./css/styles.css" 
+      rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<div align="left">
+<h1>Edição</h1>
+<h:form>
+
+	<h:messages layout="table" showSummary="true"
+				showDetail="false" globalOnly="true"
+				styleClass="msgErro" infoClass="msgInfo"
+				style="font-weight: bold"/>
+  
+  <h:panelGrid columns="2">
+						
+		<h:outputLabel value="Código:" />
+							
+		<h:panelGroup>
+									
+		<h:inputText id="codigo" size="10"	value="#{pessoaBean.codigo}"
+						 label="Código do usuario" 
+						 disabled="false"
+						 required="false"
+						 requiredMessage="Campo obrigatorio"
+                         converterMessage="Campo codigo aceita apenas numeros"/>
+				
+			
+		
+		</h:panelGroup>
+    	    			
+		<h:outputLabel value="Nome:" />
+				    				
+		<h:panelGroup>		
+			
+		<h:inputText id="nome" size="50" value="#{pessoaBean.nome}"
+						 label="Nome" 
+						 disabled="false"
+						 required="false"
+						 requiredMessage="Campo nome é obrigatorio"/>					
+		
+		</h:panelGroup>
+  		  				
+		<h:outputLabel value="Telefone:"/>
+				     		
+		<h:panelGroup >
+					
+		<h:inputText id="telefone" size="20"	value="#{pessoaBean.telefone}"
+						 label="telefone" 
+						 disabled="false"
+						 required="false"
+						 requiredMessage="Campo telefone é obrigatorio"/>					
+		</h:panelGroup>
+		
+		<h:panelGroup>
+		
+  		<h:commandButton value="Alterar" 
+                   action="#{pessoaBean.executaAlteracao}" styleClass="botao"/>     <!-- Navigates to page-b.jsf -->
+  		<h:commandButton value="Excluir"
+                   action="#{pessoaBean.executaExclusao}"  styleClass="botao"/>  
+  		<h:commandButton value="Voltar" 
+                   action="page-list?faces-redirect=true" styleClass="botao"/>  
+                   
+        </h:panelGroup>
+        
+    </h:panelGrid>                                             
+</h:form>
+
+</div></h:body></html>
